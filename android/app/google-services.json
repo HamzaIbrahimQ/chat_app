@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "583762728739",
+    "project_id": "max-chat-53879",
+    "storage_bucket": "max-chat-53879.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:583762728739:android:12a85eec13b9f8adc05e96",
+        "android_client_info": {
+          "package_name": "com.example.max_chat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "583762728739-763349itsl46rb64mn2fejfirh4oj0c7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEJvRBqcBGhj7TLkBk2iKQJAELVMibIPg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "583762728739-763349itsl46rb64mn2fejfirh4oj0c7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
