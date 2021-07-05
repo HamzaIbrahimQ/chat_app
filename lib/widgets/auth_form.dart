@@ -1,7 +1,6 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:max_chat_app/widgets/pickers/user_image_picker.dart';
-import 'package:image_picker/image_picker.dart';
 
 
 
@@ -72,6 +71,9 @@ class _AuthFormState extends State<AuthForm> {
                   TextFormField(
                     key: ValueKey('email'),
                     keyboardType: TextInputType.emailAddress,
+                    autocorrect: false,
+                    textCapitalization: TextCapitalization.none,
+                    enableSuggestions: false,
                     decoration: InputDecoration(
                       labelText: 'email address',
                     ),
@@ -89,6 +91,8 @@ class _AuthFormState extends State<AuthForm> {
                   ),
                   if(!_isLogin) TextFormField(
                     key: ValueKey('name'),
+                    textCapitalization: TextCapitalization.words,
+                    enableSuggestions: false,
                     decoration: InputDecoration(
                       labelText: 'user name',
                     ),
@@ -110,7 +114,6 @@ class _AuthFormState extends State<AuthForm> {
                       labelText: 'password',
                     ),
                     obscureText: true,
-                    obscuringCharacter: '*',
                     validator: (value) {
                       if (value.isEmpty || value.length < 6) {
                         return 'too short!';
